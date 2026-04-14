@@ -21,7 +21,6 @@ from langchain_core.runnables import RunnablePassthrough, RunnableParallel
 
 load_dotenv()
 
-# Print API key status
 api_key = os.getenv("GEMINI_API_KEY")
 if api_key:
     print(f"✅ API key loaded: {api_key[:5]}...")
