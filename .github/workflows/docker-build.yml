@@ -1,7 +1,8 @@
-name: Docker Build & Push
+á¹name: Docker Build & Push
 
 on:
   push:
+
     branches: ["production"]
   pull_request:
     branches: ["main"]
@@ -40,6 +41,7 @@ jobs:
           context: .
           push: true
           tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.lab
-els }}
+          labels: ${{ steps.meta.outputs.labels }}
           platforms: linux/amd64,linux/arm64
+
+
